@@ -102,3 +102,8 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+spain-latest.osm.pbf
+spain.o5m
+stops.csv
