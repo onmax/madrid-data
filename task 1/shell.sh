@@ -12,7 +12,7 @@ osmconvert spain-latest.osm.pbf -B=CiudadMadrid.poly.txt -o=madrid.o5m
 
 rm madrid-stops.csv
 # Filter data
-osmfilter madrid.o5m  --keep-tags="building=train_station" -o=train-stations.o5m
+osmfilter madrid.o5m --keep="public_transport=stop_position train=yes" -o=train-stations.o5m
 
 # Computer Science Vandal (CSV)
 # Filter only stops with name
