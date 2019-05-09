@@ -104,6 +104,8 @@ venv.bak/
 .mypy_cache/
 
 
-spain-latest.osm.pbf
-spain.o5m
-stops.csv
+*.pbf
+*.pbf.*
+*.o5m
+*.osm
+*.csv
