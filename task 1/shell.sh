@@ -17,7 +17,7 @@ osmfilter madrid.o5m --keep="public_transport=stop_position train=yes" -o=train-
 # Computer Science Vandal (CSV)
 # Filter only stops with name
 # TODO: Improve sed pipe to allow full name. Rigth now, it splitting all name
-osmconvert train-stations.o5m --all-to-nodes --csv="@id @lat @lon name" --csv-headline | grep -i '[0-9]*[[:blank:]][0-9]*\.[0-9]*[[:blank:]]-[0-9]\.[0-9]*[[:blank:]][0-9a-zA-Z]' | sed 's/[[:digit:]][[:blank:]][[:digit:]]/,/g' >> madrid-stops.csv
+osmconvert train-stations.o5m --all-to-nodes --csv="@id @lat @lon name" --csv-headline --csv-separator=, | grep ",.*,.*,." >> madrid-stops.csv
 sed -i '1iid,lat,lon,name' madrid-stops.csv
 
 # python dependencies
