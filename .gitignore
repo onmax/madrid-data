@@ -109,4 +109,4 @@ venv.bak/
 *.o5m
 *.osm
 *.csv
-madrid-stops.db
+*.db

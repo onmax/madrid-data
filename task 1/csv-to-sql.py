@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import sys, os
-import csv, sqlite3
+import sqlite3
 
 db_name = "stops.db"
 
