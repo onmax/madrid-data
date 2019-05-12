@@ -11,10 +11,14 @@ sudo apt-get install osmctools
 osmconvert spain-latest.osm.pbf -B=CiudadMadrid.poly.txt -o=madrid.o5m
 
 # Filter data
-osmfilter madrid.o5m --keep="public_transport=stop_position train=yes" -o=train-stations.o5m 
+osmfilter madrid.o5m --keep="bus = bus_stop" -o=bus_stops.o5m 
+osmfilter madrid.o5m --keep="subway = subway_stop" -o=subway_stops.o5m 
+osmfilter madrid.o5m --keep="train = train_stop" -o=train_stops.o5m 
 
 # Computer Science Vandal (CSV)
 # Filter only stops with name
-osmconvert train-stations.o5m --all-to-nodes --csv="@id @lat @lon name" --csv-headline --csv-separator=, | grep ",.*,.*,." | python3 csv-to-sql.py
+osmconvert bus_stops.o5m --all-to-nodes --csv="@id @lat @lon name" --csv-headline --csv-separator=, | grep ",.*,.*,." | python3 csv-to-sql.py bus_stops
+osmconvert subway_stops.o5m --all-to-nodes --csv="@id @lat @lon name" --csv-headline --csv-separator=, | grep ",.*,.*,." | python3 csv-to-sql.py subway_stops
+osmconvert train_stops.o5m --all-to-nodes --csv="@id @lat @lon name" --csv-headline --csv-separator=, | grep ",.*,.*,." | python3 csv-to-sql.py train_stops
 
 

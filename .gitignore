@@ -110,3 +110,5 @@ venv.bak/
 *.osm
 *.csv
 *.db
+*.html
+*.osml
