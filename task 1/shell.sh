@@ -22,4 +22,5 @@ sed -i '1iid,lat,lon,name' madrid-stops.csv
 
 # python dependencies
 # pip3 install -r requirements.txt
+rm madrid-stops.db
 python3 csv-to-sql.py
