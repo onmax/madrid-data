@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import csv, sqlite3
 
 con = sqlite3.connect("madrid-stops.db")
