@@ -11,7 +11,9 @@ sudo apt-get install osmctools
 osmconvert spain-latest.osm.pbf -B=CiudadMadrid.poly.txt -o=madrid.o5m
 
 # Filter data
-osmfilter madrid.o5m --keep="public_transport=stop_position train=yes" -o=train-stations.o5m 
+osmfilter madrid.o5m --keep="public_transport=stop_position train=yes" -o=train-stations.o5m
+osmfilter madrid.o5m --keep="railway=subway public_transport=stop_position subway=yes" -o=sw-stations.o5m
+osmfilter madrid.o5m --keep="public_transport=stop_position bus=yes" -o=bs-stations.o5m
 
 # Computer Science Vandal (CSV)
 # Filter only stops with name
