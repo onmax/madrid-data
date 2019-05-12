@@ -1,6 +1,6 @@
 import csv, sqlite3
 
-con = sqlite3.connect(":memory:")
+con = sqlite3.connect("sqlite3.db")
 cur = con.cursor()
 cur.execute("CREATE TABLE stops (id, lat, lon, name);")
 

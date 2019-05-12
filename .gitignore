@@ -109,3 +109,4 @@ venv.bak/
 *.o5m
 *.osm
 *.csv
+sqlite3.db
