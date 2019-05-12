@@ -26,7 +26,7 @@ osmconvert subway_stops.o5m --all-to-nodes --csv="@id @lat @lon name" --csv-head
 osmconvert train_stops.o5m --all-to-nodes --csv="@id @lat @lon name" --csv-headline --csv-separator=, | grep ",.*,.*,." | python3 csv-to-sql.py train_stops
 
 
-osmconvert restaurants.o5m --all-to-nodes --csv="@id @lon @lat name" --csv-headline --csv-separator=, | grep ",.*,.*,." | python3 csv-to-sql.py train_stops
-osmconvert bar.o5m --all-to-nodes --csv="@id @lon @lat name" --csv-headline --csv-separator=, | grep ",.*,.*,." | python3 csv-to-sql.py train_stops
-osmconvert cafe.o5m --all-to-nodes --csv="@id @lon @lat name" --csv-headline --csv-separator=, | grep ",.*,.*,." | python3 csv-to-sql.py train_stops
+osmconvert restaurants.o5m --all-to-nodes --csv="@id @lon @lat name" --csv-headline --csv-separator=, | grep ",.*,.*,." | python3 csv-to-sql.py restaurants
+osmconvert bar.o5m --all-to-nodes --csv="@id @lon @lat name" --csv-headline --csv-separator=, | grep ",.*,.*,." | python3 csv-to-sql.py bar
+osmconvert cafe.o5m --all-to-nodes --csv="@id @lon @lat name" --csv-headline --csv-separator=, | grep ",.*,.*,." | python3 csv-to-sql.py cafes
 
