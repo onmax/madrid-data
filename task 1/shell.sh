@@ -4,12 +4,8 @@
 # sudo apt-get install osmctools
 
 # Source data. Only needs to be done once
-# rm spain-latest.osm.pbf
-# wget http://download.geofabrik.de/europe/spain-latest.osm.pbf
-
-# For fast data processing, using o5m is recommended. Only needs to be done once
-# It has to be here
-osmconvert spain-latest.osm.pbf -B=CiudadMadrid.poly.txt -o=madrid.o5m 
+# wget http://download.geofabrik.de/europe/spain-latest.osm.bz2
+bzcat spain-latest.osm.bz2 | osmconvert - -B=CiudadMadrid.poly.txt -o=madrid.o5m 
 
 # First pipe
 osmfilter madrid.o5m --keep="bus = stop or subway = stop or train = stop" --ignore-depedencies | osmconvert - --all-to-nodes --csv="subway bus train @id @lat @lon name" --csv-headline --csv-separator=, | grep ",.*,.*,.*,.*,.*,." | python3 ./public-transports-sql.py

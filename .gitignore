@@ -112,3 +112,4 @@ venv.bak/
 *.db
 *.html
 *.osml
+*.osm.bz2
