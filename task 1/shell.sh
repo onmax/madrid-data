@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Group 1
+# Authors
+#   - Máximo García
+#   - Víctor Nieves
+#   - Daniel Morgera
+#   - Álvaro Revuelta
+
 # Getting osmfilter
 # sudo apt-get install osmctools
 
