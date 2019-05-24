@@ -1,0 +1,1 @@
+osmfilter madrid.o5m --keep="amenity=bar or amenity=cafe or amenity=restaurant " --ignore-depedencies | osmconvert - --all-to-nodes --csv="amenity @id @lat @lon website name" --csv-headline --csv-separator=, |  grep ",.*,.*,.*,.*,." | python3 ./leisure-sql.py
