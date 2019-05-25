@@ -1,5 +1,11 @@
-# Madrid Data
-
+# Práctica de Arquitectura Software Curso 2018-2019 
+## Objetivo
+El principal objetivo de la práctica es la aplicación de las diferentes actividades estudiadas en la
+asignatura para dar cobertura a los procesos relacionados con la especificación de la arquitectura
+de un sistema. Para el desarrollo de la práctica se aplicarán las herramientas de modelado
+adecuadas. 
+## Enunciado
+El enunciado de la practica se encuentra [aquí](/doc/enunciado.pdf).
 ## Autores
 - [Máximo García](https://github.com/onmax)
 - [Víctor Nieves](https://github.com/VictorNS69)
