@@ -5,7 +5,7 @@ asignatura para dar cobertura a los procesos relacionados con la especificación
 de un sistema. Para el desarrollo de la práctica se aplicarán las herramientas de modelado
 adecuadas. 
 ## Enunciado
-El enunciado de la practica se encuentra [aquí](/doc/enunciado.pdf).
+El enunciado de la practica se encuentra [aquí](/docs/enunciado.pdf).
 ## Autores
 - [Máximo García](https://github.com/onmax)
 - [Víctor Nieves](https://github.com/VictorNS69)
